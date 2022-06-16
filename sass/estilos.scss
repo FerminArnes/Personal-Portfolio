@@ -14,10 +14,9 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./img/Fondo.jpg);
+    background: url(../img/Fondo.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
 .main-width{
@@ -30,10 +29,9 @@ body{
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./img/Sin\ título-1.jpg);
+    background: url(../img/Sin\ título-1.jpg);
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 header{
     padding: 40px 0 30px;
@@ -67,6 +65,7 @@ nav .nav-list li a{
     margin-left: 55px;
     font-size: 15px;
     font-weight: 600;
+    text-decoration: none;
 }
 nav .nav-list .action{
     color: orangered;
@@ -91,6 +90,20 @@ nav .nav-list li.btn:hover a{
     border: 2px solid transparent;
     transition: .4s;
 }
+
+.checkbtn{
+    font-size: 50px;
+    color: orangered;
+    float: right;
+    line-height: 200px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
 .container{
     padding-top: 190px;
 
@@ -142,6 +155,7 @@ span{
 }
 .container .hero-text button a{
     color: white;
+    text-decoration: none;
 }
 .container .hero-text button a:hover{
     color: orangered;
@@ -264,4 +278,24 @@ span{
     color: white;
     background-color: orangered;
     transition: .4s;
+}
+
+
+@media ( max-width: 990px){
+    header{
+        display: flex;
+        flex-direction: column; 
+    } 
+    .logo{
+        margin-bottom: 40px;
+    }
+    body{
+        display: none;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+
+@media (max-width: 858px){
+
 }
