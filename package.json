@@ -1,0 +1,25 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerminArnes/Personal-Portfolio.git"
+  },
+  "author": "Fermín Arnes (FerTech)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerminArnes/Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/FerminArnes/Personal-Portfolio#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.18"
+  },
+  "description": "Esta pagina web es un Portfolio personal con informacion sobre Fermín Arnés"
+}
